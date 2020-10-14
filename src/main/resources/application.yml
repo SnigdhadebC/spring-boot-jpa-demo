@@ -16,4 +16,7 @@ spring:
     hibernate:
       ddl-auto: update
 
-
+app:
+  exception:
+    blogAlreadyAvailable: Blog Already Available..
+    blogNotFound: Blog Not Found....
