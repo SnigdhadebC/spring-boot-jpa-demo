@@ -1,7 +1,10 @@
 package com.application.springbootjpademo.model;
 
+import lombok.Data;
+
 import javax.persistence.*;
 
+@Data
 @Entity
 @Table(name="blogs")
 public class Blog {
@@ -14,29 +17,4 @@ public class Blog {
     private String blogName;
     @Column(name = "blog_desc")
     private String blogDesc;
-
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getBlogName() {
-        return blogName;
-    }
-
-    public void setBlogName(String blogName) {
-        this.blogName = blogName;
-    }
-
-    public String getBlogDesc() {
-        return blogDesc;
-    }
-
-    public void setBlogDesc(String blogDesc) {
-        this.blogDesc = blogDesc;
-    }
 }
